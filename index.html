@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="cubic">
+            <article class="brick">hello</article>
+        </div>
+    </div>
+<span id="debug">hello</span>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.suno_swip.js"></script>
+<script>
+    $("#wrap").swip({
+        left:function(){
+            $("#debug").html("left done");
+        },
+        moving:function(x,y){
+            $("#debug").html(x);
+        }
+    });
+
+</script>
+</html>
